@@ -5,8 +5,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
-    background-image: radial-gradient( circle 523px at 7.1% 19.3%,  rgba(147,15,255,1) 2%, rgba(5,49,255,1) 100.7% );
+    background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
 }
 
@@ -23,6 +25,9 @@ footer {
     color: white;
     font-weight: bold;
     margin-left: 10px;
+    margin-top: 20px;
+    position: relative;
+    top: 10px;
 }
 
 nav {
@@ -35,6 +40,12 @@ nav {
     margin-left: 20px;
     margin-right: 10px;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 nav:last-child {
