@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-image: radial-gradient( circle 523px at 7.1% 19.3%,  rgba(147,15,255,1) 2%, rgba(5,49,255,1) 100.7% );
+    background-size: cover;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    vertical-align: bottom;
+    bottom: 25px;
+    width: 100%;
+}
+
+.nolink {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav {
+    float: right;
+    position: relative;
+}
+
+.nav {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+nav:last-child {
+    margin-right: 10px;
+}
