@@ -12,6 +12,10 @@ body {
     color: white;
 }
 
+header {
+    overflow: hidden;
+}
+
 footer {
     position: fixed;
     text-align: center;
@@ -50,4 +54,50 @@ nav {
 
 nav:last-child {
     margin-right: 10px;
+}
+
+#intro {
+    text-align: center;
+}
+
+p#intro {
+    font-size: 22px;
+}
+
+article {
+    padding-top: 20px;
+    text-align: center;
+}
+
+button.contact {
+    margin-top: 50px;
+    color: white;
+    line-height: 2.5;
+    border-radius: 10px;
+    padding: 0 20px;
+    transition-duration: 0.4s;
+}
+
+button.contact:hover, #rsume:hover, #lnkin:hover, #email:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+#rsume {
+    background-color: deeppink;
+}
+
+
+#lnkin {
+    background-color: #0077B5;
+}
+
+#email {
+    background-color: gold;
+    color: black;
+}
+
+#gthub {
+    background-color: darkslateblue;
 }
