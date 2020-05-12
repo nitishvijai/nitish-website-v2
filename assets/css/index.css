@@ -47,6 +47,11 @@ nav {
     text-decoration: none;
 }
 
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
 .nav:hover {
     cursor: pointer;
     text-decoration: underline;
