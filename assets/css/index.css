@@ -40,6 +40,7 @@ nav {
 }
 
 .nav {
+    color: white;
     display: inline-block;
     margin-left: 20px;
     margin-right: 10px;
@@ -52,10 +53,15 @@ nav {
     text-decoration: none;
 }
 
-.nav:hover {
+.nav a:visited {
+    color: white;
+}
+
+.nav a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
+
 
 nav:last-child {
     margin-right: 10px;
