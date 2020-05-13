@@ -29,12 +29,13 @@ footer {
     color: white;
     font-weight: bold;
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 25px;
     position: relative;
     top: 10px;
 }
 
 nav {
+    margin-top: -6px;
     float: right;
     position: relative;
 }
@@ -61,7 +62,6 @@ nav {
     cursor: pointer;
     text-decoration: underline;
 }
-
 
 nav:last-child {
     margin-right: 10px;
@@ -111,4 +111,25 @@ button.contact:hover, #rsume:hover, #lnkin:hover, #email:hover {
 
 #gthub {
     background-color: darkslateblue;
+}
+
+.pgs-right {
+    width: 50%;
+    margin-right: 12%;
+    text-align: center;
+    float: right;
+}
+
+.pgs-header {
+    width: 50%;
+    text-align: left;
+    margin-left: 5%;
+    float: left; 
+    font-weight: bold;
+}
+
+#headshot {
+    border: 7px ridge gold;
+    float: left; 
+    margin-left: 14%; 
 }
