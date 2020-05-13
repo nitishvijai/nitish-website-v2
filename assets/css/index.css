@@ -122,9 +122,9 @@ button.contact:hover, #rsume:hover, #lnkin:hover, #email:hover {
 
 .pgs-header {
     width: 50%;
-    text-align: left;
-    margin-left: 5%;
-    float: left; 
+    margin-right: 12%;
+    text-align: center;
+    float: right; 
     font-weight: bold;
 }
 
