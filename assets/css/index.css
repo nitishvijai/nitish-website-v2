@@ -29,6 +29,10 @@ footer {
     width: 100%;
 }
 
+#designedby {
+    font-size: 0.75em;
+}
+
 .nolink {
     text-decoration: none;
     color: white;
