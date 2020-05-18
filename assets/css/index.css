@@ -57,7 +57,7 @@ footer {
     position: fixed;
     text-align: center;
     vertical-align: bottom;
-    bottom: 25px;
+    bottom: 10px;
     width: 100%;
 }
 
@@ -129,6 +129,7 @@ h1#intro {
 article {
     padding-top: 5px;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 button.contact {
@@ -169,6 +170,10 @@ button.contact:hover, #rsume:hover, #lnkin:hover, #email:hover {
     margin-right: 12%;
     text-align: center;
     float: right;
+}
+
+.right {
+    position: absolute;
 }
 
 .pgs-header {
