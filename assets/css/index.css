@@ -11,12 +11,43 @@ body {
     font-family: 'Segoe UI', 'Open Sans', Tahoma, Verdana, sans-serif;
     font-size: 1rem;
     height: 100%;
-    background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: 800% 800%;
     color: white;
+
+    background-image: linear-gradient(270deg, #242766, #077af4, #07aef4, #07edf4);
+    -webkit-animation: BlueHues 30s ease infinite;
+    -moz-animation: BlueHues 30s ease infinite;
+    -o-animation: BlueHues 30s ease infinite;
+    animation: BlueHues 30s ease infinite;
 }
+
+/* Animated Gradient Selectors */
+
+@-webkit-keyframes BlueHues {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@-moz-keyframes BlueHues {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@-o-keyframes BlueHues {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes BlueHues {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* End Animated Gradient Selectors */
 
 header {
     overflow: hidden;
