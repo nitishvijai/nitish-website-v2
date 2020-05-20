@@ -11,7 +11,8 @@
         <link href="assets/css/index.css" rel="stylesheet" />
     </head>
     <body>
-        <header>
+        <div class="main-container">
+            <header>
             <a class="nolink" href="index.html" style="font-weight: normal;">Nitish Vijai</a>
             <nav>
                 <ul>
@@ -30,14 +31,35 @@
         <p style="text-align: center; padding-top: 1%;">Here's a list of all the personal projects I've worked on over the past few years.</p>
         <article id="projects"> 
             <div class="proj">
-                <img src="assets/img/eventempo.png" height="200" width="350" />
-                <h2>Eventempo</h2>
-                <p>December 2019 - April 2020</p>
-                <p>I built a UWP countdown timer app for Windows 10 devices. Some features include support for multiple event countdown timers, ease of use, event autosave, colorful customization, and notification alerts. I worked on this app during winter break of my freshman year in college, and released incremental updates to the app in the following months.</p>
-                <p>Tools Utilized: C# .NET (backend), XAML (frontend), Visual Studio</p>
-                <a href="#">GitHub Repository</a>
-                <a href="#">Download on the Microsoft Store (Windows 10 only)</a>
+                <div id="image">
+                    <img src="assets/img/website.png" class="proj" height="230" width="380" /> 
+                </div>
+                <div id="info">
+                    <h2 class="proj">Personal Website</h2>
+                <p class="proj date">May 2020 - Present</p>
+                <p class="proj description">I designed a personal website to show my portfolio of skills and projects. In addition, this website was designed from scratch to replace my previous GitHub Pages site, breaking free from template design constraints and gaining a more thorough understanding of HTML, CSS, and JS.</p>
+                <p class="proj tools">Tools Utilized: HTML5, CSS3, JavaScript, Visual Studio Code</p>
+                <a class="proj" href="https://github.com/nitishvijai/nitish-website-v2">GitHub Repository</a>
+                </div>
+            </div>
+            <div class="proj">
+                <img src="assets/img/eventempo.png" class="proj" height="230" width="380" />
+                <h2 class="proj">Eventempo</h2>
+                <p class="proj date">December 2019 - April 2020</p>
+                <p class="proj description">I built a UWP countdown timer app for Windows 10 devices. Some features include support for multiple event countdown timers, ease of use, event autosave, colorful customization, and notification alerts. I worked on this app during winter break of my freshman year in college, and released incremental updates to the app in the following months.</p>
+                <p class="proj tools">Tools Utilized: C# .NET (backend), XAML (frontend), Visual Studio</p>
+                <a class="proj" href="https://github.com/nitishvijai/Eventempo">GitHub Repository</a>
+                <a id="sep">|</a>
+                <a class="proj" href="https://www.microsoft.com/en-us/p/eventempo/9pcfmsx2g386?activetab=pivot:overviewtab">Download on the Microsoft Store</a>
             </div>
         </article>
+        
+        <footer><hr width="80%" />Copyright © 2020 Nitish Vijai<br/><span id="designedby"><a id="ft" href="https://github.com/nitishvijai/nitish-website-v2">Designed by Nitish Vijai (Version 2.0)</a></span></footer>
+        </div>
+        
+
+        <!-- SCRIPTS -->
+        <script src="assets/js/main.js"></script>
+        <script src="https://kit.fontawesome.com/2616fd647a.js" crossorigin="anonymous"></script>
     </body>
 </html>
