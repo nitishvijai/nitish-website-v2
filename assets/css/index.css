@@ -14,11 +14,11 @@ body {
     background-size: 800% 800%;
     color: white;
 
-    background-image: linear-gradient(270deg, #242766, #077af4, #07aef4, #07edf4);
-    -webkit-animation: BlueHues 30s ease infinite;
-    -moz-animation: BlueHues 30s ease infinite;
-    -o-animation: BlueHues 30s ease infinite;
-    animation: BlueHues 30s ease infinite;
+    background-image: linear-gradient(270deg, #4B0082, #242766, #077af4, #07aef4);
+    -webkit-animation: BlueHues 20s ease infinite;
+    -moz-animation: BlueHues 20s ease infinite;
+    -o-animation: BlueHues 20s ease infinite;
+    animation: BlueHues 20s ease infinite;
 }
 
 /* Animated Gradient Selectors */
@@ -81,6 +81,7 @@ footer {
     margin-top: 25px;
     position: relative;
     top: 10px;
+    text-shadow: 2px 2px 4px black;
 }
 
 nav {
@@ -99,6 +100,7 @@ nav {
 }
 
 .nav a {
+    color: white;
     display: inline-block;
     text-decoration: none;
 }
