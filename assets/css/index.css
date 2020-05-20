@@ -23,7 +23,7 @@ body {
 }
 
 .main-container {
-    min-height: 100vh;
+    min-height: 98vh;
     overflow: hidden;
     display: block;
     position: relative;
@@ -64,7 +64,7 @@ header {
 
 footer {
     position: absolute;
-    bottom: 25px;
+    bottom: 20px;
     width: 100%;
     text-align: center;
 }
@@ -142,7 +142,8 @@ article {
 }
 
 button.contact {
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
     color: white;
     line-height: 2.5;
     border-radius: 10px;
@@ -150,14 +151,14 @@ button.contact {
     transition-duration: 0.4s;
 }
 
-button.contact:hover, #rsume:hover, #lnkin:hover, #email:hover {
+button.contact:hover, #ytube:hover, #lnkin:hover, #email:hover {
     color: black;
     background-color: white;
     cursor: pointer;
 }
 
-#rsume {
-    background-color: deeppink;
+#ytube {
+    background-color: #FF0000;
 }
 
 
@@ -242,4 +243,54 @@ a.proj:hover {
 
 a.proj:visited {
     color: white;
+}
+
+/* End Projects Section */
+
+/* Contact Section */
+
+input[type="text"], textarea {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea {
+    min-height: 200px;
+    min-width: 40%;
+}
+
+input[type="submit"] {
+    color: white;
+    line-height: 2.5;
+    border-radius: 10px;
+    padding: 0 20px;
+    transition-duration: 0.4s;
+    background-color: green;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    color: white;
+    line-height: 2.5;
+    border-radius: 10px;
+    padding: 0 20px;
+    transition-duration: 0.4s;
+    background-color: gray;
+}
+
+input[type="reset"]:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
