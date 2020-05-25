@@ -84,11 +84,12 @@ footer {
 .nolink {
     text-decoration: none;
     color: white;
+    font-size: 20px;
     font-weight: bold;
     margin-left: 10px;
-    margin-top: 25px;
+    margin-top: 0px;
     position: relative;
-    top: 10px;
+    top: 5px;
 }
 
 nav {
@@ -149,11 +150,17 @@ article {
 }
 
 a.pgs-link:visited {
-    color: white;
+    color: yellow;
+}
+
+a.pgs-link:hover {
+    color: black;
 }
 
 a.pgs-link {
-    color: white;
+    font-weight: 500;
+    color: yellow;
+    text-decoration: none;
 }
 
 .right {
