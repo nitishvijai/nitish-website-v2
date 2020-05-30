@@ -276,6 +276,18 @@ input[type="reset"]:hover {
     cursor: pointer;
 }
 
+input.valid, textarea.valid {
+    border: 5px solid greenyellow;
+}
+
+input.invalid, textarea.invalid {
+    border: 5px solid red;
+}
+
+.error {
+    display: none;
+}
+
 button.contact {
     margin-top: 10px;
     margin-right: 10px;
@@ -307,6 +319,10 @@ button.contact:hover, #ytube:hover, #lnkin:hover, #email:hover, #gthub:hover {
 
 #gthub {
     background-color: darkslateblue;
+}
+
+#subject {
+    max-width: 80%;
 }
 
 /* Resume Section */
