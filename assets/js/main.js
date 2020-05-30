@@ -19,8 +19,10 @@ $(document).ready(function() {
         var isName = input.val();
         if (isName) {
             input.removeClass("invalid").addClass("valid");
+            $('#errName').removeClass("error_show").addClass("error");
         } else {
             input.removeClass("valid").addClass("invalid");
+            $('#errName').removeClass("error").addClass("error_show");
         }
     });
 
@@ -30,8 +32,10 @@ $(document).ready(function() {
         var isEmail = re.test(input.val());
         if (isEmail) {
             input.removeClass("invalid").addClass("valid");
+            $('#errMail').removeClass("error_show").addClass("error");
         } else {
             input.removeClass("valid").addClass("invalid");
+            $('#errMail').removeClass("error").addClass("error_show");
         }
     });
 
@@ -40,8 +44,10 @@ $(document).ready(function() {
         var message = input.val();
         if (message) {
             input.removeClass("invalid").addClass("valid");
+            $('#errMesg').removeClass("error_show").addClass("error");
         } else {
             input.removeClass("valid").addClass("invalid");
+            $('#errMesg').removeClass("error").addClass("error_show");
         }
     });
 
@@ -58,21 +64,37 @@ $(document).ready(function() {
             event.preventDefault();
             if (!name) {
                 $('#errName').removeClass("error").addClass("error_show");
+                $('#fullName').removeClass("valid").addClass("invalid");
             } else {
                 $('#errName').removeClass("error_show").addClass("error");
+                $('#fullName').removeClass("invalid").addClass("valid");
             }
 
             if (!email) {
                 $('#errMail').removeClass("error").addClass("error_show");
+                $('#emailadd').removeClass("valid").addClass("invalid");
             } else {
                 $('#errMail').removeClass("error_show").addClass("error");
+                $('#emailadd').removeClass("invalid").addClass("valid");
             }
 
             if (!subject) {
                 $('#errMesg').removeClass("error").addClass("error_show");
+                $('#subject').removeClass("valid").addClass("invalid");
             } else {
                 $('#errMesg').removeClass("error_show").addClass("error");
+                $('#subject').removeClass("invalid").addClass("valid");
             }
         }
+    });
+
+    $('#resetButton').click(function() {
+        $('#errName').removeClass("error_show").addClass("error");
+        $('#errMail').removeClass("error_show").addClass("error");
+        $('#errMesg').removeClass("error_show").addClass("error");
+
+        $('#fullName').removeClass("invalid").removeClass("valid");
+        $('#emailadd').removeClass("invalid").removeClass("valid");
+        $('#subject').removeClass("invalid").removeClass("valid");
     });
 });

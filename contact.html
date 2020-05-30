@@ -58,7 +58,7 @@
 
             <p style="margin-top: 5%;">Do you have a quick question? Submit this form below, and I will get back to you as soon as possible.</p>
             <div id="contactme">
-                <form id="contactForm" method="POST">
+                <form id="contactForm" method="POST" action="mailto:nitishv@umich.edu"> 
                     <input type="text" id="fullName" name="fullname" placeholder="Enter your name here..." />
                     <br/>
                     <input type="text" id="emailadd" name="mailadd" placeholder="Enter your e-mail address here..." />
@@ -66,7 +66,7 @@
                     <textarea id="subject" name="subject" placeholder="Type your message, questions, feedback in here. If necessary, expand this box using the slider grip at the bottom right." style="height: 200px;"></textarea>
                     <br/><br/>
                     <input id="submitButton" type="submit" value="Submit" />
-                    <input type="reset" value="Reset" />
+                    <input id="resetButton" type="reset" value="Reset" />
                     <br/><br/>
                     <span id="errName" class="error">Full name is required</span><br/>
                     <span id="errMail" class="error">Email address is required</span><br/>
