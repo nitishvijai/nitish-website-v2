@@ -211,19 +211,18 @@ p.proj {
     text-align: left;
 }
 
-a.proj {
+.projLnk {
     font-weight: 600;
-    color: white;
+    color: yellow;
     text-decoration: none;
 }
 
-a.proj:hover {
-    color: red;
-    text-decoration: underline;
+.projLnk:hover {
+    color: black;
 }
 
-a.proj:visited {
-    color: white;
+.projLnk:visited {
+    color: yellow;
 }
 
 /* End Projects Section */
