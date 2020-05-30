@@ -356,3 +356,24 @@ p.pdf {
 #resume-container p {
     text-align: left;
 }
+
+/* End Resume Section */
+
+#class-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#class-container div {
+    text-align: left;
+}
+
+.course {
+    color: yellow;
+}
+
+.semester p {
+    padding-top: 0px;
+}
