@@ -92,6 +92,12 @@ footer {
     top: 5px;
 }
 
+#logo {
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-right: 5px;
+}
+
 nav {
     margin-top: -6px;
     float: right;
@@ -124,6 +130,10 @@ nav {
 
 nav:last-child {
     margin-right: 10px;
+}
+
+.active {
+    cursor: default;
 }
 
 #intro {
