@@ -1,3 +1,5 @@
+/* DOCUMENT SELECTORS */
+
 * {
     box-sizing: border-box;
 }
@@ -14,7 +16,6 @@ body {
     height: 100%;
     background-size: 800% 800%;
     color: white;
-
     background-image: linear-gradient(270deg, #4B0082, #242766, #077af4, #07aef4);
     -webkit-animation: BlueHues 20s ease infinite;
     -moz-animation: BlueHues 20s ease infinite;
@@ -30,34 +31,6 @@ body {
     padding-bottom: 100px;
 }
 
-/* Animated Gradient Selectors */
-
-@-webkit-keyframes BlueHues {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-@-moz-keyframes BlueHues {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-@-o-keyframes BlueHues {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-@keyframes BlueHues {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* End Animated Gradient Selectors */
-
 header {
     overflow: hidden;
 }
@@ -69,19 +42,7 @@ footer {
     text-align: center;
 }
 
-#designedby {
-    font-size: 0.75em;
-}
-
-#ft {
-    color: white;
-}
-
-#ft:hover {
-    color: red;
-}
-
-.nolink {
+.logo-name {
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -90,12 +51,6 @@ footer {
     margin-top: 0px;
     position: relative;
     top: 5px;
-}
-
-#logo {
-    vertical-align: middle;
-    margin-top: 0px;
-    margin-right: 5px;
 }
 
 nav {
@@ -132,6 +87,90 @@ nav:last-child {
     margin-right: 10px;
 }
 
+#intro {
+    text-align: center;
+}
+
+h1#intro {
+    padding-bottom: 0px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+/* Animated Gradient Selectors */
+
+@-webkit-keyframes BlueHues {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes BlueHues {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-o-keyframes BlueHues {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes BlueHues {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* End Animated Gradient Selectors */
+
+#designedby {
+    font-size: 0.75em;
+}
+
+#ft {
+    color: white;
+}
+
+#ft:hover {
+    color: red;
+}
+
+#logo {
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-right: 5px;
+}
+
+#ft {
+    text-decoration: underline;
+}
+
 p {
     display: none;
 }
@@ -144,15 +183,7 @@ main {
     cursor: default;
 }
 
-#intro {
-    text-align: center;
-}
 
-h1#intro {
-    padding-bottom: 0px;
-    font-size: 32px;
-    font-weight: 500;
-}
 
 article {
     padding-top: 5px;
@@ -194,14 +225,14 @@ a.pgs-link {
     width: 50%;
     margin-right: 12%;
     text-align: center;
-    float: right; 
+    float: right;
     font-weight: bold;
 }
 
 #headshot {
     border: 7px ridge gold;
-    float: left; 
-    margin-left: 14%; 
+    float: left;
+    margin-left: 14%;
     margin-top: 7%;
 }
 
@@ -347,6 +378,8 @@ button.contact:hover, #ytube:hover, #lnkin:hover, #email:hover, #gthub:hover {
     max-width: 80%;
 }
 
+/* End Contact Section */
+
 /* Resume Section */
 
 #rsume {
@@ -380,6 +413,7 @@ p.pdf {
     margin-bottom: 0px;
     text-align: left;
 }
+
 #resume-container h4 {
     margin-top: 0px;
     font-weight: normal;
@@ -396,7 +430,8 @@ p.pdf {
 }
 
 /* End Resume Section */
-/* Essays Section */
+
+/* Class Section */
 
 #class-container {
     display: flex;

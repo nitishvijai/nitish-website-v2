@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     //// fade elements in
     $('main').fadeIn(2000);
     $('#sep').fadeIn(2000);
@@ -6,22 +6,22 @@ $(document).ready(function() {
     $('p').fadeIn(2000);
     $('#essayBody').fadeIn(2000);
 
-    $("#refresh").hover(function(){
+    $("#refresh").hover(function () {
         document.getElementById("refresh").innerHTML = "Refresh Page";
     },
-    function(){
-        document.getElementById("refresh").innerHTML = "<img src='./assets/favicon/favicon-96x96.png' id='logo' width='2%' height='2%' style='display: inline;'/>Nitish Vijai";
-    });
+        function () {
+            document.getElementById("refresh").innerHTML = "<img src='./assets/favicon/favicon-96x96.png' id='logo' width='2%' height='2%' style='display: inline;'/>Nitish Vijai";
+        });
 
-    $("#name").hover(function(){
+    $("#name").hover(function () {
         document.getElementById("name").innerHTML = "Go Back Home";
     },
-    function(){
-        document.getElementById("name").innerHTML = "<img src='./assets/favicon/favicon-96x96.png' id='logo' width='2%' height='2%' style='display: inline;'/>Nitish Vijai";
-    });
+        function () {
+            document.getElementById("name").innerHTML = "<img src='./assets/favicon/favicon-96x96.png' id='logo' width='2%' height='2%' style='display: inline;'/>Nitish Vijai";
+        });
 
     // Contact Form Validation
-    $('#fullName').on('input', function(){
+    $('#fullName').on('input', function () {
         var input = $(this);
         var isName = input.val();
         if (isName) {
@@ -33,7 +33,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#emailadd').on('input', function() {
+    $('#emailadd').on('input', function () {
         var input = $(this);
         var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         var isEmail = re.test(input.val());
@@ -46,7 +46,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#subject').keyup(function(event) {
+    $('#subject').keyup(function (event) {
         var input = $(this);
         var message = input.val();
         if (message) {
@@ -58,7 +58,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#submitButton').click(function(event) {
+    $('#submitButton').click(function (event) {
         var name = $('#fullName').val();
         var email = $('#emailadd').hasClass('valid');
         var subject = $('#subject').val();
@@ -95,7 +95,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#resetButton').click(function() {
+    $('#resetButton').click(function () {
         $('#errName').removeClass("error_show").addClass("error");
         $('#errMail').removeClass("error_show").addClass("error");
         $('#errMesg').removeClass("error_show").addClass("error");
