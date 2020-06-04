@@ -1,4 +1,18 @@
 $(document).ready(function() {
+
+    //// hide elements first
+    //   index.html
+    $('main').hide();
+    $('#sep').hide();
+    $('article').hide();
+    $('p').hide();
+    //// fade elements in
+    //   index.html
+    $('main').fadeIn(2000);
+    $('#sep').fadeIn(2000);
+    $('article').fadeIn(2000);
+    $('p').fadeIn(2000);
+
     $("#refresh").hover(function(){
         document.getElementById("refresh").innerHTML = "Refresh Page";
     },
