@@ -396,6 +396,7 @@ p.pdf {
 }
 
 /* End Resume Section */
+/* Essays Section */
 
 #class-container {
     display: flex;
@@ -408,8 +409,13 @@ p.pdf {
     text-align: left;
 }
 
-.course {
+.course, a:visited, a {
     color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
 }
 
 .semester p {

@@ -4,6 +4,7 @@ $(document).ready(function() {
     $('#sep').fadeIn(2000);
     $('article').fadeIn(2000);
     $('p').fadeIn(2000);
+    $('#essayBody').fadeIn(2000);
 
     $("#refresh").hover(function(){
         document.getElementById("refresh").innerHTML = "Refresh Page";
