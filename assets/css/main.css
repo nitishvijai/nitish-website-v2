@@ -89,6 +89,10 @@ nav:last-child {
     margin-right: 10px;
 }
 
+.hb {
+    display: none;
+}
+
 #intro {
     text-align: center;
 }
@@ -457,4 +461,19 @@ a:hover {
 
 .semester p {
     padding-top: 0px;
+}
+
+/* ------------- MOBILE MEDIA QUERIES ------------- */
+
+/* mobile portrait mode */
+@media screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .hb {
+        display: block;
+        float: right;
+        padding-top: 11px;
+    }
 }
