@@ -10,14 +10,14 @@ $(document).ready(function () {
         document.getElementById("refresh").innerHTML = "Refresh Page";
     },
         function () {
-            document.getElementById("refresh").innerHTML = "<img src='./assets/favicon/favicon-96x96.png' id='logo' width='2%' height='2%' style='display: inline;'/>Nitish Vijai";
+            document.getElementById("refresh").innerHTML = "<img src='./assets/favicon/favicon-96x96.png' id='logo' width='40px' height='40px' style='display: inline;'/>Nitish Vijai";
         });
 
     $("#name").hover(function () {
         document.getElementById("name").innerHTML = "Go Back Home";
     },
         function () {
-            document.getElementById("name").innerHTML = "<img src='./assets/favicon/favicon-96x96.png' id='logo' width='2%' height='2%' style='display: inline;'/>Nitish Vijai";
+            document.getElementById("name").innerHTML = "<img src='./assets/favicon/favicon-96x96.png' id='logo' width='40px' height='40px' style='display: inline;'/>Nitish Vijai";
         });
 
     // Contact Form Validation
