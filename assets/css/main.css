@@ -49,10 +49,14 @@ footer {
     font-weight: bold;
     margin-left: 10px;
     margin-top: 0px;
-    padding-right: 20px;
-    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-bottom: 0px;
     position: relative;
     top: 5px;
+}
+
+.logo-name:hover {
+    padding-right: 30px;
 }
 
 nav {
