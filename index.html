@@ -34,20 +34,21 @@
 <body>
     <div class="main-container">
         <header>
-            <a class="logo-name" id="refresh" href="index.html"><img src="./assets/favicon/favicon-96x96.png" id="logo"
-                    width="40px" height="40px" style="display: inline;" />Nitish Vijai</a>
-            <a href="#main-menu" class="hb" aria-label="Open Menu">
-                <i class="fa fa-bars"></i>
-            </a>
-            <nav id="menu-bar" class="main-menu" aria-label="Main Menu">
-                <ul>
-                    <li class="nav"><a href="about.html">About Nitish</a></li>
-                    <li class="nav"><a href="projects.html">Projects</a></li>
-                    <li class="nav"><a href="resume.html">Resume</a></li>
-                    <li class="nav"><a href="essays.html">Essays</a></li>
-                    <li class="nav"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <!-- DESKTOP MENU -->
+            <div id="desktop">
+                <a class="logo-name" id="refresh" href="index.html"><img src="./assets/favicon/favicon-96x96.png" id="logo"
+                    width="25px" height="25px" style="display: inline;" />Nitish Vijai</a>
+                <a href="javascript:void(0);" id="hbBtn" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+                <nav id="menu-bar" class="main-menu" aria-label="Main Menu">
+                    <ul>
+                        <li class="nav"><a href="about.html">About Nitish</a></li>
+                        <li class="nav"><a href="projects.html">Projects</a></li>
+                        <li class="nav"><a href="resume.html">Resume</a></li>
+                        <li class="nav"><a href="essays.html">Essays</a></li>
+                        <li class="nav"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             <h1 id="intro">Nitish Vijai</h1>

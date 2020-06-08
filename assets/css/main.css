@@ -60,7 +60,12 @@ footer {
     padding-right: 30px;
 }
 
+#hbBtn {
+    display: none;
+}
+
 nav {
+    display: block;
     margin-top: -6px;
     float: right;
     position: relative;
@@ -469,15 +474,46 @@ a:hover {
 
 /* ------------- MOBILE MEDIA QUERIES ------------- */
 
-/* mobile portrait mode */
+/* narrow browser window */
 @media screen and (max-width: 600px) {
-    .nav {
-        display: none;
-    }
 
-    .hb {
+    #hbBtn {
         display: block;
         float: right;
-        padding-top: 11px;
+        padding-top: 8px;
+        padding-right: 10px;
+    } 
+
+    a:hover {
+        color: yellow;
+    }
+
+    body {
+        font-size: 0.75rem;
+    }
+
+    a.logo-name {
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+        margin-top: 0px;
+        float: none;
+        text-align: center;
+        position: relative;
+    }
+
+    .nav {
+        color: white;
+        display: block;
+        margin-left: 20px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    #menu-bar ul {
+        list-style-type: none;
     }
 }

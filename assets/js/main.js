@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    // globals
+    var visible = $('nav').is(":visible");
+
     //// fade elements in
     $('main').fadeIn(2000);
     $('#sep').fadeIn(2000);
@@ -10,14 +13,14 @@ $(document).ready(function () {
         document.getElementById("refresh").innerHTML = "Refresh Page";
     },
         function () {
-            document.getElementById("refresh").innerHTML = "<img src='./assets/favicon/favicon-96x96.png' id='logo' width='40px' height='40px' style='display: inline;'/>Nitish Vijai";
+            document.getElementById("refresh").innerHTML = "<img src='./assets/favicon/favicon-96x96.png' id='logo' width='25px' height='25px' style='display: inline;'/>Nitish Vijai";
         });
 
     $("#name").hover(function () {
         document.getElementById("name").innerHTML = "Go Back Home";
     },
         function () {
-            document.getElementById("name").innerHTML = "<img src='./assets/favicon/favicon-96x96.png' id='logo' width='40px' height='40px' style='display: inline;'/>Nitish Vijai";
+            document.getElementById("name").innerHTML = "<img src='./assets/favicon/favicon-96x96.png' id='logo' width='25px' height='25px' style='display: inline;'/>Nitish Vijai";
         });
 
     // Contact Form Validation
@@ -105,4 +108,21 @@ $(document).ready(function () {
         $('#subject').removeClass("invalid").removeClass("valid");
     });
 
+    $('#hbBtn').click(function() {
+        $('nav').toggle();
+        visible = $('nav').is(":visible");
+    });
+
+    $(window).on("orientationchange", function(event) {
+        if (window.orientation == 0 || window.orientation == 180) {
+            if (visible === false) {
+                $('nav').hide();
+            }
+        }
+        else if (window.orientation == -90 || window.orientation == 90){
+            if (visible === false) {
+                $('nav').show();
+            }
+        }
+    });
 });
