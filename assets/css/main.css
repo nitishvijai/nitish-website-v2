@@ -444,6 +444,14 @@ p.pdf {
     text-align: left;
 }
 
+#col1 {
+    width: 45%;
+}
+
+#col2 {
+    width: 45%;
+}
+
 /* End Resume Section */
 
 /* Class Section */
@@ -474,7 +482,7 @@ a:hover {
 
 /* ------------- MOBILE MEDIA QUERIES ------------- */
 
-/* narrow browser window */
+/* narrow browser window / portrait mobile layout */
 @media screen and (max-width: 600px) {
 
     #hbBtn {
@@ -531,7 +539,7 @@ a:hover {
         max-width: 95%;
     }
 
-    /* About Section - Mobile */
+    /* About Section - Mobile (Portrait) */
 
     #headshot {
         float: none;
@@ -564,4 +572,53 @@ a:hover {
         text-align: center;
     }
 
+    /* End About Section - Mobile (Portrait) */
+
+    /* Projects Section - Mobile (Portrait) */
+    img.proj {
+        margin-top: 10%;
+        height: 100%;
+        width: 100%;
+        float: none;
+    }
+
+    p.date {
+        text-align: center;
+    }
+
+    h2.proj {
+        padding-top: 1%;
+        text-align: center;
+    }
+
+    #pgInfo {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* End Projects Section - Mobile (Portrait) */
+
+    /* Resume Section - Mobile */
+    #rsume {
+        border-radius: 10px;
+        padding: 0 20px;
+        margin-top: 10px;
+        transition-duration: 0.4s;
+        margin-left: 10px;
+    }
+
+    #resume-container {
+        display: block;
+        width: 80%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    #col1 {
+        width: 100%;
+    }
+
+    #col2 {
+        width: 100%;
+    }
+    /* End Resume Section */
 }
