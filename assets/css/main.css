@@ -597,6 +597,133 @@ a:hover {
     }
     /* End Projects Section - Mobile (Portrait) */
 
+    /* Resume Section - Mobile (Portrait) */
+    #rsume {
+        border-radius: 10px;
+        padding: 0 20px;
+        margin-top: 10px;
+        transition-duration: 0.4s;
+        margin-left: 10px;
+    }
+
+    #resume-container {
+        display: block;
+        width: 80%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    #col1 {
+        width: 100%;
+    }
+
+    #col2 {
+        width: 100%;
+    }
+    /* End Resume Section (Portrait) */
+
+    /* Classes Section - Mobile (Portrait) */
+    #class-container {
+        display: block;
+        width: 80%;
+        position: relative;
+    }
+
+    p.blank {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+/* semi-wide browser window / landscape mobile layout */
+@media screen and (max-width: 1000px) and (min-width: 600px) and (orientation: landscape) {
+
+    nav {
+        display: block;
+        margin-top: -6px;
+        float: right;
+        text-align: center;
+        position: relative;
+    }
+
+    a:hover {
+        color: yellow;
+    }
+
+    input[type="text"], textarea {
+        width: 80%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        margin-top: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    textarea {
+        max-width: 95%;
+    }
+
+    /* About Section - Mobile (Landscape) */
+
+    #headshot {
+        float: none;
+        margin-left: 0%;
+        margin-top: 0%;
+        width: 50%;
+    }
+
+    .right {
+        position: relative;
+    }
+
+
+    .pgs-right {
+        width: 75%;
+        margin: 0 auto 20px auto;
+        float: none;
+    }
+
+    .pgs-header {
+        width: 50%;
+        float: none;
+        margin: 10px auto 20px auto;
+    }
+
+    #abtFooter {
+        position: relative;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* End About Section - Mobile (Landscape) */
+
+    /* Projects Section - Mobile (Landscape) */
+
+    img.proj {
+        margin-top: 10%;
+        height: 80%;
+        width: 80%;
+        float: none;
+    }
+
+    p.date {
+        text-align: center;
+    }
+
+    h2.proj {
+        padding-top: 1%;
+        text-align: center;
+    }
+
+    #pgInfo {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* End Projects Section - Mobile (Portrait) */
+
     /* Resume Section - Mobile */
     #rsume {
         border-radius: 10px;
