@@ -488,7 +488,7 @@ a:hover {
         color: yellow;
     }
 
-    body {
+    body, h1, p {
         font-size: 0.75rem;
     }
 
@@ -530,4 +530,38 @@ a:hover {
     textarea {
         max-width: 95%;
     }
+
+    /* About Section - Mobile */
+
+    #headshot {
+        float: none;
+        margin-left: 0%;
+        margin-top: 0%;
+        width: 50%;
+    }
+
+    .right {
+        position: relative;
+    }
+
+
+    .pgs-right {
+        width: 75%;
+        margin: 0 auto 20px auto;
+        float: none;
+    }
+
+    .pgs-header {
+        width: 50%;
+        float: none;
+        margin: 10px auto 20px auto;
+    }
+
+    #abtFooter {
+        position: relative;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
 }
