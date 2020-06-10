@@ -1,6 +1,15 @@
 $(document).ready(function () {
     // globals
     var visible = $('nav').is(":visible");
+    var path = window.location.pathname.match(/[^\/]+$/)[0];
+
+    console.log(path);
+    if (path === 'index.html') {
+        console.clear();
+        console.log('Hello there! Thanks for visiting!');
+        console.log('Questions? Please use one of the methods on the Contact page. I would love to hear from you!');
+        console.log('- Nitish');
+    }
 
     //// fade elements in
     $('main').fadeIn(2000);
@@ -111,18 +120,15 @@ $(document).ready(function () {
     $('#hbBtn').click(function() {
         $('nav').toggle();
         visible = $('nav').is(":visible");
-        console.log(visible);
     });
 
     $(window).on("orientationchange", function(event) {
         if (window.orientation == 0 || window.orientation == 180) {
-            console.log('switching to portrait');
             if (visible === false) {
                 $('nav').hide();
             }
         }
         else if (window.orientation == -90 || window.orientation == 90){
-            console.log('switching to landscape');
             if (visible === false) {
                 $('nav').show();
             }
