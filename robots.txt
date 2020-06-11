@@ -1,0 +1,9 @@
+# Block pics from appearing on Google Images - Group 1
+User-agent: Googlebot-Image
+Disallow: /assets/img/eventempo.png
+Disallow: /assets/img/website.png
+Allow: /assets/img/nitishvijainew.jpg
+
+# Allow other data - Group 2
+User-agent: *
+Allow: /
