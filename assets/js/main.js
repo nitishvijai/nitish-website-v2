@@ -129,12 +129,7 @@ $(document).ready(function () {
             }
         }
         else if (window.orientation == -90 || window.orientation == 90){
-            if (visible === false) {
-                $('nav').show();
-            }
-            else if (visible === true) {
-                $('nav').show();
-            }
+            $('nav').show();
         }
     });
 });
