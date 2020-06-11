@@ -4,7 +4,7 @@ $(document).ready(function () {
     var path = window.location.pathname.match(/[^\/]+$/)[0];
 
     console.log(path);
-    if (path === 'index.html') {
+    if (path === 'home.html') {
         console.clear();
         console.log('Hello there! Thanks for visiting!');
         console.log('Questions? Please use one of the methods on the Contact page. I would love to hear from you!');

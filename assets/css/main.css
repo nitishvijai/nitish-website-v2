@@ -655,6 +655,12 @@ a:hover {
     }
 }
 
+@media screen and (max-height: 900px)  {
+    .right {
+        position: relative;
+    }
+}
+
 /* semi-wide browser window / landscape mobile layout */
 @media screen and (max-width: 1000px) and (min-width: 600px) and (orientation: landscape) {
 
