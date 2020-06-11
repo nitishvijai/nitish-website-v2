@@ -294,6 +294,11 @@ p.proj {
     color: yellow;
 }
 
+#divider {
+    cursor: default;
+    color: yellow;
+}
+
 /* End Projects Section */
 
 /* Contact Section */
