@@ -456,6 +456,13 @@ p.pdf {
 
 /* Class Section */
 
+#mobile-container {
+    display: none;
+    justify-content: space-evenly;
+    width: 85%;
+    margin: 0 auto;
+}
+
 #class-container {
     display: flex;
     justify-content: space-evenly;
@@ -463,7 +470,7 @@ p.pdf {
     margin: 0 auto;
 }
 
-#class-container div {
+#class-container div, #mobile-container div {
     text-align: left;
 }
 
@@ -624,6 +631,10 @@ a:hover {
 
     /* Classes Section - Mobile (Portrait) */
     #class-container {
+        display: none;
+    }
+
+    #mobile-container {
         display: block;
         width: 80%;
         position: relative;
@@ -632,6 +643,10 @@ a:hover {
     p.blank {
         visibility: hidden;
         display: none;
+    }
+
+    .semester {
+        padding-bottom: 25px;
     }
 }
 
@@ -731,6 +746,10 @@ a:hover {
         margin-top: 10px;
         transition-duration: 0.4s;
         margin-left: 10px;
+    }
+
+    #mobile-container {
+        display: none;
     }
 
     #resume-container {
