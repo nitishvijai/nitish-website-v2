@@ -31,6 +31,14 @@ body {
     padding-bottom: 100px;
 }
 
+#aboutContainer {
+    min-height: 98vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 0px;
+}
+
 header {
     overflow: hidden;
 }
