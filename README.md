@@ -2,6 +2,10 @@
 
 Updated website created from scratch in HTML, CSS, JavaScript, and jQuery.
 
+Check it out [here](https://nitishv.dev)!
+
+The version 1 repo is [here](https://github.com/nitishvijai/nitish-website-v1) for archival/legacy purposes.
+
 Motivation:
   - To gain HTML, CSS, and other web dev. skills by creating a website from scratch
   - Simplify the current website with a design I've envisioned with CSS
