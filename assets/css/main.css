@@ -50,13 +50,6 @@ footer {
     text-align: center;
 }
 
-#abtFooter {
-    position: relative;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-}
-
 .logo-name {
     text-decoration: none;
     color: white;
@@ -594,13 +587,6 @@ a:hover {
         margin: 10px auto 20px auto;
     }
 
-    #abtFooter {
-        position: relative;
-        bottom: 20px;
-        width: 100%;
-        text-align: center;
-    }
-
     /* End About Section - Mobile (Portrait) */
 
     /* Projects Section - Mobile (Portrait) */
@@ -727,13 +713,6 @@ a:hover {
         margin-right: 12%;
         text-align: center;
         float: right;
-    }
-
-    #abtFooter {
-        position: relative;
-        bottom: 20px;
-        width: 100%;
-        text-align: center;
     }
 
     /* End About Section - Mobile (Landscape) */
