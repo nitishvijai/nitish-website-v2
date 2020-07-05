@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, shrink-to-fit=no">
+    <meta name="description" content="Nitish's Website Version 2">
+    <meta name="author" content="Nitish Vijai">
+    <meta name="keywords" content="nitish, vijai, personal, resume, portfolio">
+
+    <!-- FAVICON-->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Running Linux on Windows via the Windows Subsystem for Linux - Essays - Nitish Vijai</title>
+    <link href="../assets/css/essays.css" rel="stylesheet" />
+</head>
+
+<body>
+    <a href="../essays.html" id="back"><i class="fas fa-arrow-left"></i> Go Back to Nitish's Essays</a>
+
+    <div id="essayBody">
+        <h1 class="text">Running Linux on Windows via the Windows Subsystem for Linux</h1>
+        <h2 class="text">Attaining the full power of UNIX on the Windows platform</h2>
+        <p class="text">Published on July 14, 2019 (edited on July 4, 2020)</p>
+
+        <!-- ESSAY TEXT -->
+
+        <p class="text">Thanks to the Windows Subsystem for Linux, it's never been easier to develop on the UNIX
+            platform on
+            Windows. Read the article to find out more!</p>
+
+        <p class="text">Also, I was out at orientation last weekend, so I did kind of forget to post this last week, but
+            oh well.</p>
+        <h2 id="introduction">Introduction</h2>
+        <p class="text">I’ve been taking a great interest into the Linux operating system over the past couple of years,
+            and my willingness to learn the multitude of commands on the Bash shell only spiked when I installed Ubuntu
+            on my Windows 10 desktop (no virtual machine; full terminal!). There’s a vast array of options to emulate
+            the Linux development
+            experience on Windows. You may have heard of Cygwin and Windows Services for UNIX (now discontinued), but
+            have you heard about the Windows Subsystem for Linux (WSL), Microsoft’s new official method for running
+            Linux programs and terminal commands on Windows?</p>
+
+        <p class="text">In addition, after starting my EECS 280 (Programming and Intro to Data Structures) course at
+            Michigan, all
+            students on Windows 10 were encouraged to use WSL for development and terminal. I do have to say that once
+            you get acquainted with the Terminal, you'll never go back. Pushing your changes via the command line is
+            quite an experience indeed!</p>
+        <h2 class="text">What is the Windows Subsystem for Linux?</h2>
+        <p>In 2016, Microsoft released the Windows Subsystem for Linux (WSL). WSL provides a Linux compatibility layer
+            on Windows, allowing users and developers to execute Linux commands and executables natively on a Windows
+            computer.</p>
+
+        <p>The project came about just as Microsoft cancelled Project Astoria, a bridge which allowed Android
+            developers to port Android apps to run on Microsoft’s Windows Phone (rest in peace). Astoria faced multiple
+            delays during development and was shelved in favor of Xamarin, another solution for cross-platform app
+            development using the C# language. The technologies behind Project Astoria were reused to develop WSL as we
+            know it today.</p>
+
+        <p>WSL 1.0 was released in August 2016 with support for only one distro, Ubuntu on 64-bit Windows 10.
+            Eventually, more distros became available, such as SUSE, Debian, and others. While faster than previous
+            attempts at Linux emulation on Windows, native I/O speeds were often slow thanks to the translation layer
+            present in translating Linux commands to system calls on the Windows NT kernel.</p>
+
+        <p>Recently however, Microsoft released WSL 2.0 to the general public. This is a
+            significant step as Microsoft removed the translation layer, instead opting to go with a full-blown Linux
+            kernel inside Windows. Such a move would enhance compatibility with greater Linux calls and improve native
+            I/O operation speeds, resulting in a productivity boon for casual Linux users and developers alike.</p>
+
+        <p>Now that you know the gist of WSL, here's how to run Linux programs on your Windows computer!</p>
+        <h2>Installing the Windows Subsystem for Linux</h2>
+        <p>First and foremost, if you haven’t updated your computer, do it now. In order to enable WSL 2.0, you will
+            need
+            Windows 10 version 2004 (build 19041). You should be able to download this update over Windows Update.</p>
+        <p>Now that your computer is all up-to-date, it’s time to get virtual Linux (except not really) running and
+            ready to use on your PC.</p>
+
+        <p>NOTE: All steps below are for Windows 10 only. Windows Server 2016 and 2019 require additional configuration
+            steps in order to use WSL on those platforms. Microsoft has official documentation available on their site.
+        </p>
+
+        <p>Click on Start and type in “Control Panel.” Next, click on “Programs
+            and Features” (if you’re in Category mode, click on “Programs” instead). Then, on the left-hand pane, click
+            on “Turn Windows features on or off.” In the box that appears, scroll down and make sure that “Windows
+            Subsystem for Linux” and "Virtual Machine Platform" is checked. You may need to restart your computer before
+            continuing.
+        </p>
+
+        <a class="img" href="../assets/img/essays/features.png"><img src="../assets/img/essays/features.png"
+                alt="Control Panel > Programs and Features" height="40%" width="40%" /></a>
+
+        <p>After the restart, open an administrator PowerShell window and type in the following:</p>
+
+        <code>wsl --set-default-version 2</code>
+
+        <p>This will set all future Linux distros to WSL 2 as the default version.</p>
+
+
+        <h2>Picking your distro of choice</h2>
+        <p>You’ve installed Windows Subsystem for Linux, but you can’t use it yet. There’s no distro to emulate the
+            Linux terminal! To fix that, open up the Microsoft Store at the bottom. Next, type “Linux” in the Search
+            box. All of the Linux distributions will be the first results. </p>
+
+        <a class="img" href="../assets/img/essays/wstore.png"><img src="../assets/img/essays/wstore.png"
+                alt="Microsoft Store Search Results" height="40%" width="40%" /></a>
+
+        <p>If you’re a beginner to Linux, I would personally install Ubuntu.</p>
+
+        <p>Click on your distro, then hit the Install/Get button on the page. Once it’s done installing, hit “Launch.”
+        </p>
+
+        <p>At the moment, hitting the button will open a new Command Prompt window. You’ll have to wait a few
+            minutes for the distro to configure itself. Once that’s done, you’ll be prompted to enter a UNIX account
+            username and password. They do not have to be the same as your Windows credentials.</p>
+
+        <a class="img" href="../assets/img/essays/ubuntuinstall.png"><img src="../assets/img/essays/ubuntuinstall.png"
+                alt="Ubuntu Setup" height="40%" width="40%" /></a>
+
+        <p>NOTE: If you choose to elevate a command with admin (SUDO) permissions, you'll need to enter your password,
+            so make sure you can remember it!</p>
+
+        <p>Once you’ve set up your distro, make sure to update your Linux packages with the commands sudo apt update and
+            sudo apt upgrade.</p>
+
+        <p>Now, you’ve got the full power of Linux in your hands. To see what distros you’ve installed, type in wsl -l.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>After following this tutorial, you should have a fast and simple way to access a Linux terminal on your
+            Windows PC. Install a Linux program on WSL and be amazed!</p>
+        <p>Over and out,
+            <br />Nitish Vijai</p>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/2616fd647a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
