@@ -471,6 +471,10 @@ p.pdf {
 
 /* Class Section */
 
+#class {
+    display: block;
+}
+
 #mobile-container {
     display: none;
     justify-content: space-evenly;
@@ -500,6 +504,13 @@ a:hover {
 
 .semester p {
     padding-top: 0px;
+}
+
+#classFooter {
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 /* ------------- MOBILE MEDIA QUERIES ------------- */
