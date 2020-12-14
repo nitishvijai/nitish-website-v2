@@ -6,5 +6,5 @@ Allow: /assets/img/nitishvijainew.jpg
 
 # Allow other data - Group 2
 User-agent: *
-Disallow: /assets/doc/JKRentalsEULA.html
+Disallow: /assets/doc/JKRentals_EULA.html
 Allow: /
