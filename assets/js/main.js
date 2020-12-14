@@ -123,13 +123,22 @@ $(document).ready(function () {
     });
 
     $(window).on("orientationchange", function(event) {
+        var width = Math.max(window.screen.width, window.innerWidth);
+
+        console.log(window.orientation);
+
         if (window.orientation == 0 || window.orientation == 180) {
-            if (visible === false) {
-                $('nav').hide();
-            }
+            // if (visible === false) {
+            //     $('nav').hide();
+            //     $('#hbBtn').show();
+            // }
+
+            $('nav').hide();
+            $('#hbBtn').show();
         }
         else if (window.orientation == -90 || window.orientation == 90){
             $('nav').show();
+            $('#hbBtn').hide();
         }
     });
 });
