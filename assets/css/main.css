@@ -208,6 +208,10 @@ main {
     cursor: default;
 }
 
+#important {
+    text-align: center;
+}
+
 article {
     padding-top: 5px;
     text-align: center;
