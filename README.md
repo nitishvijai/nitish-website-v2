@@ -2,23 +2,19 @@
 
 Updated website created from scratch in HTML, CSS, JavaScript, and jQuery.
 
-Check it out [here](https://nitishv.dev)!
-
 The version 1 repo is [here](https://github.com/nitishvijai/nitish-website-v1) for archival/legacy purposes.
 
 Motivation:
   - To gain HTML, CSS, and other web dev. skills by creating a website from scratch
   - Simplify the current website with a design I've envisioned with CSS
   - Enhance the user experience with mobile responsive design and JavaScript animations
-  - Have fun in the process! (UPDATE 6/11/2020: I did have fun in the process!)
+  - Have fun in the process!
 
-## UPDATE 6/11/2020
+## UPDATE 3/12/2023
 
-I have officially finished this new site, and I've ultimately learned a lot in these past few months. Although I knew some basic HTML and CSS prior to this project, I wanted to become more confident in my skills, and I thus believe I've attained my goals.
+This version of the site is no longer maintained. It's been a good three years, but it's time for something bigger and better to come.
 
-I've learned a lot of new concepts, such as mobile responsive design, jQuery/JavaScript interaction, and CSS animations. I've also learned a lot of lessons for my next project, including as to why mobile should NOT be an afterthought, etc (😂).
-
-I do plan to redo the website every summer, learning a new web framework/technology with each revision. With this site, though, I'm glad to say that I'm ready to take on another web development project using the skills I've gained!
+Version 3.0 of the site should be up [here](https://nitishv.dev) soon! It's now React-powered and takes the best of this site to a new level! To follow all future development, the repo is [here](https://github.com/nitishvijai/nitish-website-v3) on GitHub. See you on the other side!
 
 Over and out,<br/>
 Nitish Vijai
